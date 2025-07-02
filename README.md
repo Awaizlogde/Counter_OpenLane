@@ -1,25 +1,22 @@
-# Counter_OpenLane
-# 4-bit Counter using OpenLane and Sky130
+# 4 -bit Counter_OpenLane
+# Counter - OpenLane Physical Design Project
 
-This is a simple 2-bit up-counter implemented in Verilog and synthesized using the OpenLane flow with Sky130 PDK.
+This project implements a simple digital counter using Verilog and performs full RTL-to-GDSII flow using OpenLane and the Sky130 PDK.
 
-## Project Structure
+## 📁 Project Structure
 
-- `counter/src/counter.v`: Verilog RTL code for the counter
-- `counter/config.json`: OpenLane configuration
-- `counter/pin_order.cfg`: Optional pin order file
-- `openlane/`: Reference to OpenLane flow
+- `counter/src/counter.v` — RTL code for the counter
+- `counter/config.json` — OpenLane configuration for the design
+- `runs/counter_run/results/final/gds/counter.gds` — Final GDSII layout output
+- `runs/counter_run/results/final/mag/counter.mag` — magic layout output
+- 
+## 🧰 Tools Used
 
-## How to Run
+- [OpenLane](https://github.com/The-OpenROAD-Project/OpenLane)
+- Sky130 Process Design Kit (PDK)
 
-### Prerequisites
-- Docker installed
-- OpenLane installed (see: https://github.com/The-OpenROAD-Project/OpenLane)
-- Sky130 PDK installed or auto-downloaded via OpenLane
+## 🔍 Viewing Layout
 
-### Steps
-
-1. Clone this repo:
-   ```bash
-   git clone https://github.com/Awaizlogde/counter_openlane.git
-   cd counter_openlane
+You can view the layout using Magic or KLayout:
+```bash
+magic -T sky130A.tech runs/counter_run/results/final.gds
