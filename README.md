@@ -21,5 +21,5 @@ This is a simple 2-bit up-counter implemented in Verilog and synthesized using t
 
 1. Clone this repo:
    ```bash
-   git clone https://github.com/yourusername/counter_openlane.git
+   git clone https://github.com/Awaizlogde/counter_openlane.git
    cd counter_openlane
