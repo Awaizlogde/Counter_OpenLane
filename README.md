@@ -13,10 +13,14 @@ This project implements a simple digital counter using Verilog and performs full
 ## 🧰 Tools Used
 
 - [OpenLane](https://github.com/The-OpenROAD-Project/OpenLane)
-- Sky130 Process Design Kit (PDK)
+- Sky130A Process Design Kit (PDK)
 
 ## 🔍 Viewing Layout
 
 You can view the layout using Magic or KLayout:
 ```bash
 magic -T sky130A.tech runs/counter_run/results/final.gds
+
+## 💬 Ask Questions
+
+Have questions or suggestions? Start a discussion in the [Discussions tab](../../discussions)
